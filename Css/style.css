@@ -1,0 +1,1608 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+body {
+    background: #fff;
+}
+
+/* Header */
+/* Header-top */
+.header-top {
+    background: RGBA(94, 190, 214, 1);
+    color: #ffffff;
+    padding: 16px 0;
+}
+
+.header-top a {
+    color: #ffffff;
+}
+
+.header-top-address {
+    margin-right: 40px;
+    font-family: OpenSans;
+}
+
+.header-top-address i {
+    margin-right: 10px;
+}
+
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-links i {
+    margin-right: 10px;
+}
+
+.header-top-icons {
+    width: 165px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-icons i {
+    transition: all .3s ease;
+}
+
+.header-top-icons i:hover {
+    color: #000000;
+    scale: 1.5;
+}
+
+header {
+    position: relative;
+}
+
+/* s */
+
+.header-top-links {
+    font-family: OpenSans;
+    /* margin: 0 10px; */
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+/* Header-bottom */
+.header-bottom {
+    padding: 33px 0;
+    background: rgb(255, 255, 255);
+    font-family: OpenSans;
+}
+
+.header-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    width: 695px;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color: #272727;
+    transition: .3s;
+    padding: 10px 20px;
+    font-family: OpenSans;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    background: RGBA(94, 190, 214, 1);
+    color: #fff;
+}
+
+/* toggle btn */
+.toggle-btn {
+    position: relative;
+    width: 25px;
+    height: 3px;
+    background: #06647c;
+    display: none;
+    flex-shrink: 0;
+}
+
+.toggle-btn::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    display: block;
+    background: #06647c;
+    top: 8px;
+    left: 0;
+    right: 0;
+}
+
+.toggle-btn::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    display: block;
+    background: #06647c;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+}
+
+.toggle-open::after {
+    content: "";
+    background: #000000;
+    display: block;
+    transform: rotate(50deg);
+    position: absolute;
+    top: -4px;
+    transition: all .3s ease;
+}
+
+.toggle-open::before {
+    content: "";
+    background: #000000;
+    display: block;
+    transform: rotate(-50deg);
+    position: absolute;
+    top: -4px;
+    transition: all .3s ease;
+}
+
+/* toggle btn */
+/* Banner */
+.banner {
+    background: url(../images/RabbitBanner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 160px;
+    padding-bottom: 230px;
+}
+
+@font-face {
+    font-family: Lato-Bold;
+    src: url(../fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-BoldItalic;
+    src: url(../fonts/OpenSans-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-SemiBoldItalic;
+    src: url(../fonts/OpenSans-SemiBoldItalic.ttf);
+}
+
+@font-face {
+    font-family: OpenSans-SemiBold;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+.banner-content {
+    max-width: 645px;
+    margin-left: auto;
+}
+
+.banner-content h2 {
+    color: #272727;
+    font-size: 43px;
+    font-family: Lato-Bold;
+    margin-bottom: 40px;
+}
+
+.banner-content h1 {
+    font-size: 80px;
+    color: #06647c;
+    font-family: OpenSans-BoldItalic;
+    margin-bottom: 60px;
+}
+
+.banner-content span {
+    font-family: OpenSans-SemiBoldItalic;
+    color: #272727;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 55px;
+    max-width: 520px;
+}
+
+.banner-content a {
+    font-family: OpenSans-SemiBoldItalic;
+    color: #272727;
+    font-size: 29px;
+    display: block;
+    transition: all .3s;
+    padding: 22px 55px;
+    background: RGBA(94, 190, 214, 1);
+    display: inline-block;
+}
+
+.banner-content a:hover {
+    background: #06647c;
+    color: #fff;
+}
+
+.banner .container {
+    position: relative;
+}
+
+.banner .container .slick-slider {
+    position: unset;
+
+}
+
+.previous-slick {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    outline: none;
+    border: 0;
+    background: #5EBED6;
+    padding: 15px;
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    color: #fff;
+    transition: all .3s;
+    border: 3px solid #5EBED6;
+    z-index: 99;
+}
+
+.previous-slick:hover {
+    background: transparent;
+    border: 3px solid #fff;
+}
+
+.next-slick {
+    position: absolute;
+    top: 350px;
+    right: 0;
+    outline: none;
+    border: 0;
+    background: #5EBED6;
+    padding: 15px;
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    color: #fff;
+    transition: all .3s;
+    border: 3px solid #5EBED6;
+}
+
+.next-slick:hover {
+    background: transparent;
+    border: 3px solid #fff;
+}
+
+/*End Banner */
+img {
+    cursor: pointer;
+}
+
+i {
+    cursor: pointer;
+}
+
+/* About the Task */
+.about-task {
+    padding-top: 150px;
+    padding-bottom: 105px;
+}
+
+.about-task .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-task-row {
+    display: flex;
+    column-gap: 20px;
+}
+
+/* accordion */
+.accordion {
+    max-width: 461px;
+    /* background: #fff; */
+    color: #272727;
+}
+
+label i {
+    text-align: end;
+}
+
+label h2 {
+    font-size: 22px;
+    font-family: OpenSans-Bold;
+    color: #272727;
+    cursor: pointer;
+}
+
+.accordion-tab>label {
+    padding: 12px 20px;
+    display: block;
+    background: RGBA(243, 243, 243, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-tab .accordion-toggle {
+    display: none;
+}
+
+.accordion-content p {
+    padding: 15px 20px;
+    background: #3EB9C5;
+    font-size: 14px;
+    color: #ffffff;
+    font-family: OpenSans;
+    line-height: 1.8;
+}
+
+.accordion-content {
+    margin: 10px 0;
+    background: tan;
+}
+
+.accordion-content h3 {
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 22px;
+    font-family: OpenSans-Bold;
+}
+
+.accordion-tab>.accordion-content {
+    max-height: 0px;
+    transition: all .4s;
+    overflow: hidden;
+    background: #3EB9C5;
+    color: #ffffff;
+}
+
+.accordion-tab>.accordion-toggle:checked~.accordion-content {
+    max-height: 100vh;
+}
+
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+/* card */
+/* .about-task-image {
+    max-width: 263px;
+    height: 195px;
+} */
+.about-task-card {
+    max-width: 263px;
+}
+
+.about-task-image img {
+    max-width: 263px;
+    margin-bottom: 20px;
+}
+
+.about-task-image img {
+    width: 100%;
+}
+
+.about-task-card p {
+    font-family: OpenSans;
+    text-align: center;
+    font-size: 14px;
+    color: #272727;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.about-task-card h3 {
+    font-family: OpenSans-SemiBold;
+    text-align: center;
+    font-size: 20px;
+    color: #272727;
+    margin-bottom: 12px;
+}
+
+.about-task a {
+    font-family: MyriadPro-Semibold;
+    color: #ffffff;
+    font-size: 16px;
+    display: block;
+    transition: .3s;
+    padding: 12px 24px;
+    background: RGBA(94, 190, 214, 1);
+    margin: 0 auto;
+    max-width: fit-content;
+    transition: all .3s ease;
+}
+
+.about-task a:hover {
+    background: rgb(71, 120, 132);
+}
+
+@font-face {
+    font-family: MyriadPro-Semibold;
+    src: url(../fonts/FontsFree-Net-MyriadPro-Semibold.otf);
+}
+
+@font-face {
+    font-family: OpenSans-Italic;
+    src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+/* CSS */
+/*  */
+.rabbit-task {
+    background: url(../images/tr.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 105px;
+    padding-bottom: 125px;
+}
+
+.rabbit-card {
+    max-width: 357px;
+    background: #ffffff;
+    padding-bottom: 10px;
+}
+
+.rabbit-card-image {
+    margin-bottom: 15px;
+}
+
+.rabbit-card-image img {
+    width: 100%;
+}
+
+.rabbit-card h3 {
+    font-family: OpenSans;
+    color: #272727;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.rabbit-card span {
+    font-family: OpenSans-Italic;
+    color: #06647c;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.rabbit-task .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.rabbit-task h2 {
+    font-size: 40px;
+    color: #272727;
+    font-family: OpenSans;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.rabbit-task .rabbit-bold {
+    font-family: OpenSans-SemiBold;
+    color: #06647c;
+    font-size: 40px;
+}
+
+/* End Rabbit Task */
+
+/* get-matched */
+.get-matched {
+    padding-top: 100px;
+    /* padding-bottom: 70px; */
+}
+
+.get-matched h2 {
+    margin-bottom: 75px;
+    color: #272727;
+    font-size: 40px;
+    font-family: OpenSans-SemiBold;
+    text-align: center;
+}
+
+.get-matched-image {
+    width: 39px;
+    height: 31px;
+    margin-bottom: 35px;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.get-matched-card {
+    max-width: 280px;
+    text-align: center;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.matched-arrow {
+    position: absolute;
+    top: 26px;
+    right: 0;
+}
+
+.get-matched-content h3 {
+    font-family: OpenSans-SemiBold;
+    font-size: 22px;
+    color: #272727;
+    margin-bottom: 25px;
+}
+
+.get-matched-content p {
+    font-family: OpenSans-SemiBold;
+    font-size: 15px;
+    color: #272727;
+    font-family: OpenSans;
+    line-height: 1.7;
+}
+
+.get-matched .container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #272727;
+    /* margin-bottom: 70px; */
+}
+
+/* .get-matched-image>img {
+    margin: 0 auto;
+} */
+
+/* youNeed */
+.youNeed {
+    padding-top: 85px;
+    padding-bottom: 120px;
+}
+
+.youNeed h2 {
+    margin-bottom: 75px;
+    color: #272727;
+    font-size: 40px;
+    font-family: OpenSans-SemiBold;
+    text-align: center;
+}
+
+.youNeed-card:nth-child(1) {
+    background-color: RGBA(6, 100, 124, 1);
+    color: #ffffff;
+}
+
+.youNeed-card:nth-child(2) {
+    background-color: #ffbf37;
+    color: #ffffff;
+}
+
+.youNeed-card:nth-child(3) {
+    background-color: #5EBED6;
+    color: #ffffff;
+}
+
+.youNeed-card {
+    max-width: 361px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 65px;
+}
+
+.youNeed-card-image img {
+    margin-bottom: 30px;
+}
+
+.youNeed .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.youNeed-card h3 {
+    font-size: 20px;
+    font-family: OpenSans-SemiBold;
+    margin-bottom: 20px;
+}
+
+.youNeed-card p {
+    font-size: 15px;
+    font-family: OpenSans-SemiBold;
+    padding: 0 35px;
+    line-height: 1.7;
+}
+
+/* End youNeed */
+
+/* Became-Tasker */
+.became-tasker {
+    background: url(../images/tasker.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.tasker-content {
+    max-width: 797px;
+    color: #ffff;
+}
+
+.tasker-content h2 {
+    font-size: 58px;
+    font-family: OpenSans-SemiBold;
+    margin-bottom: 40px;
+}
+
+.tasker-content p {
+    font-size: 25px;
+    font-family: OpenSans;
+}
+
+.tasker-content p:last-child {
+    margin-top: 50px;
+}
+
+.became-tasker .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tasker-btn a {
+    font-family: OpenSans-SemiBold;
+    color: #ffffff;
+    font-size: 30px;
+    display: block;
+    transition: all .3s;
+    padding: 10px 40px;
+    background: RGBA(255, 191, 55, 1);
+
+    max-width: fit-content;
+}
+
+.tasker-btn a:hover {
+    background: rgb(173, 131, 39);
+    color: #fff;
+}
+
+/*End Became-Tasker */
+/* Testimonial */
+.testimonial {
+    padding-top: 75px;
+    padding-bottom: 105px;
+}
+
+.testimonial h2 {
+    margin-bottom: 30px;
+    color: #272727;
+    font-size: 40px;
+    font-family: OpenSans-SemiBold;
+    text-align: center;
+}
+
+.testimonial h3 {
+    margin-bottom: 120px;
+    color: #5EBED6;
+    font-size: 40px;
+    font-family: OpenSans-SemiBold;
+    text-align: center;
+}
+
+.testimonial-img {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 850px;
+    margin-bottom: 100px;
+}
+
+/* Slider */
+.slider-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 50px;
+}
+
+.slider-info {
+    max-width: 740px;
+}
+
+.slider-info p {
+    font-size: 20px;
+    font-family: OpenSans;
+    margin-bottom: 30px;
+}
+
+.slider-info h4 {
+    font-size: 16px;
+    font-family: OpenSans-SemiBold;
+    margin-bottom: 10px;
+}
+
+.slider-info span {
+    font-family: OpenSans-SemiBold;
+    display: block;
+    font-size: 12px;
+}
+
+.slick-prev {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    z-index: 99;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 25px;
+    color: #929298;
+}
+
+.slick-next {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-size: 25px;
+    color: #929298;
+}
+
+/*End Testimonial */
+
+/* footer */
+footer {
+    background: url(../images/foooter.png);
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+
+.footer-middle {
+    background-color: #252525;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.footer-middle .address-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 245px;
+    margin-bottom: 20px;
+    font-family: OpenSans-SemiBold;
+}
+
+.footer-middle .policy-links {
+    width: 293px;
+    display: flex;
+    justify-content: space-between;
+    color: #5c5959;
+    font-size: 14px;
+    font-family: OpenSans-BoldItalic;
+}
+
+.footer-middle .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icons span {
+    display: block;
+    text-align: end;
+    color: #5c5959;
+    font-size: 14px;
+    font-family: OpenSans-BoldItalic;
+}
+
+.footer-icons i {
+    margin: 0 10px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #5c5959;
+    transition: all .3s;
+}
+
+.footer-icons i:hover {
+    color: #ffff;
+    transform: scale(1.4);
+}
+
+/* 1200px */
+@media screen and (max-width:1200px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .about-task-card {
+        max-width: 213px;
+    }
+
+    .rabbit-card {
+        max-width: 310px;
+        padding-bottom: 10px;
+    }
+
+    .tasker-content {
+        max-width: 650px;
+    }
+
+    .youNeed .container {
+        /* display: flex; */
+        /* justify-content: space-between; */
+        gap: 10px;
+    }
+}
+
+/* 992px */
+@media screen and (max-width:992px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .logo img {
+        width: 186px;
+    }
+
+    nav ul li a {
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+
+    nav ul {
+        width: 510px;
+    }
+
+    .accordion {
+        max-width: 326px;
+    }
+
+    .about-task-image img {
+        margin-bottom: 5px;
+    }
+
+    .about-task-card {
+        max-width: 189px;
+    }
+
+    .about-task-card h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    .about-task-card p {
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+
+    .rabbit-task .container {
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+    .rabbit-task .container {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .rabbit-card {
+        max-width: 227px;
+    }
+
+    .youNeed-card {
+        max-width: 312px;
+    }
+
+    .youNeed .container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .youNeed-card p {
+        font-size: 15px;
+        padding: 0 10px;
+        line-height: 1.5;
+    }
+
+    .youNeed-card {
+        max-width: 238px;
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+
+    .youNeed {
+        padding-top: 65px;
+        padding-bottom: 50px;
+    }
+
+    .testimonial {
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+
+    .testimonial h2 {
+        margin-bottom: 10px;
+        font-size: 35px;
+    }
+
+    .testimonial h3 {
+        margin-bottom: 60px;
+        font-size: 30px;
+    }
+
+    .slick-prev {
+        position: absolute;
+        top: 95px;
+        left: -13px;
+        z-index: 99;
+        background: transparent;
+        border: 0;
+        outline: none;
+        font-size: 25px;
+        color: #929298;
+    }
+
+    .slick-next {
+        position: absolute;
+        top: 95px;
+        right: -11px;
+        background: transparent;
+        border: 0;
+        outline: none;
+        font-size: 25px;
+        color: #929298;
+    }
+
+    .slider-info p {
+        font-size: 15px;
+        margin-bottom: 19px;
+    }
+
+    .slider-info {
+        max-width: 80%;
+    }
+
+    .tasker-content h2 {
+        font-size: 45px;
+        font-family: OpenSans-SemiBold;
+        margin-bottom: 20px;
+    }
+
+    .tasker-content p {
+        font-size: 20px;
+    }
+
+    .tasker-content p:last-child {
+        margin-top: 20px;
+    }
+
+    .tasker-btn a {
+        font-size: 20px;
+        padding: 10px 30px;
+    }
+
+    .tasker-content {
+        max-width: 550px;
+    }
+
+    .tasker-btn a {
+        font-size: 18px;
+        padding: 10px 29px;
+    }
+
+    .banner-content h1 {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+
+    .banner-content h2 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .banner-content span {
+        font-size: 20px;
+        margin-bottom: 35px;
+        max-width: 520px;
+    }
+
+    .next-slick {
+
+        top: 135px;
+        font-size: 25px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .previous-slick {
+        top: 135px;
+        font-size: 25px;
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* 768px */
+@media screen and (max-width:768px) {
+    .header-top {
+        display: none;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .header-bottom-row button {
+        display: none;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        height: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #1e272e;
+        overflow: hidden;
+        z-index: 10;
+    }
+
+    .nav-show {
+        display: block;
+        height: 350px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav ul li a {
+        color: #fff;
+        font-size: 12px;
+    }
+
+    .toggle-open {
+        visibility: hidden;
+    }
+
+    .toggle-open::before {
+        visibility: visible;
+    }
+
+    .toggle-open::after {
+        visibility: visible;
+    }
+
+    .about-task .container {
+        flex-direction: column;
+    }
+
+    .accordion {
+        max-width: 100%;
+    }
+
+    .accordion {
+        width: 100%;
+    }
+
+    .about-task-card {
+        max-width: 50%;
+    }
+
+    label h2 {
+        font-size: 16px;
+    }
+
+    .accordion-content h3 {
+        padding-left: 15px;
+        padding-top: 8px;
+        font-size: 15px;
+    }
+
+    .accordion-content p {
+        padding: 9px 14px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .about-task a {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .about-task-card p {
+        font-size: 12px;
+        margin-bottom: 7px;
+        line-height: 1.5;
+    }
+
+    .about-task-card h3 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .rabbit-card {
+        max-width: 48%;
+    }
+
+    .rabbit-card h3 {
+        font-size: 15px;
+        margin-bottom: 0px;
+        padding-left: 8px;
+    }
+
+    .rabbit-card-image {
+        margin-bottom: 5px;
+    }
+
+    .rabbit-task {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .rabbit-task h2 {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .rabbit-task .rabbit-bold {
+        font-size: 30px;
+        font-size: 25px;
+
+    }
+
+    .about-task-image img {
+        margin-bottom: 5px;
+        max-width: 100%;
+    }
+
+    .get-matched-content p {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .get-matched-content h3 {
+        font-size: 16px;
+        margin-bottom: 9px;
+    }
+
+    .get-matched-image {
+        margin-bottom: 20px;
+    }
+
+    .get-matched .container {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .get-matched h2 {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .get-matched {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .get-matched-card {
+        margin-bottom: 25px;
+    }
+
+    .youNeed .container {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .youNeed-card {
+        width: 100%;
+    }
+
+    .youNeed h2 {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .youNeed {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .testimonial-img {
+        max-width: 740px;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .testimonial h2 {
+        margin-bottom: 0px;
+        font-size: 30px;
+    }
+
+    .testimonial h3 {
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+
+    .slider-info p {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .slider-info h4 {
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+
+    .slider-info span {
+        font-size: 10px;
+    }
+
+    .testimonial {
+        padding-top: 25px;
+        padding-bottom: 20px;
+    }
+
+    .tasker-content {
+        max-width: 400px;
+    }
+
+    .tasker-content p {
+        font-size: 15px;
+    }
+
+    .tasker-content h2 {
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    .tasker-content p:last-child {
+        margin-top: 10px;
+    }
+
+    .tasker-btn a {
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+
+    .about-task {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .banner-content h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .banner-content h2 {
+        font-size: 27px;
+        margin-bottom: 4px;
+    }
+
+    .banner-content span {
+        font-size: 16px;
+        margin-bottom: 16px;
+        max-width: 400px;
+    }
+
+    .banner-content a {
+        font-size: 13px;
+        padding: 10px 20px;
+
+    }
+
+    .previous-slick {
+        top: 280px;
+        font-size: 20px;
+        width: 55px;
+        height: 55px;
+        /* left: 200px; */
+        left: unset;
+        right: 61%;
+    }
+
+    .next-slick {
+        top: 280px;
+        font-size: 20px;
+        width: 55px;
+        height: 55px;
+        /* right: 200px; */
+        right: unset;
+        left: 61%;
+    }
+
+    .banner {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .logo img {
+        width: 116px;
+    }
+
+    .rabbit-card {
+        max-width: 95%;
+    }
+
+    .about-task-row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .about-task-card {
+        max-width: 100%;
+    }
+
+    .about-task-image img {
+        margin-bottom: 5px;
+        max-width: 100%;
+    }
+
+    .youNeed .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .rabbit-task .rabbit-bold {
+        font-size: 20px;
+    }
+
+    .rabbit-task h2 {
+        font-size: 20px;
+    }
+
+    .get-matched h2 {
+        /* margin-bottom: 30px; */
+        font-size: 20px;
+    }
+
+    .youNeed-card {
+        max-width: 100%;
+    }
+
+    .youNeed-card-image img {
+        margin-bottom: 10px;
+    }
+
+    .youNeed-card p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .youNeed-card h3 {
+        font-size: 15px;
+        font-family: OpenSans-SemiBold;
+        margin-bottom: 10px;
+    }
+
+    .youNeed h2 {
+        margin-bottom: 19px;
+        font-size: 20px;
+    }
+
+    .youNeed {
+        padding-top: 0px;
+        padding-bottom: 10px;
+    }
+
+    .testimonial h2 {
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+
+    .testimonial h3 {
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .testimonial-img {
+        gap: 10px;
+    }
+
+    .slider-info p {
+        font-size: 10px;
+        margin-bottom: 0px;
+    }
+
+    .slick-next {
+        font-size: 25px;
+        right: 50px;
+        bottom: -320px;
+    }
+
+    .slick-prev {
+        font-size: 25px;
+        left: 50px;
+        bottom: -320px;
+    }
+
+    .slider-content img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .slider-content {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial {
+        padding-top: 25px;
+        padding-bottom: 80px;
+    }
+
+    .slider-info p {
+        font-size: 12px;
+        margin-bottom: 0px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .slider-content img {
+        margin-bottom: 20px;
+    }
+
+    .testimonial-img {
+        margin-bottom: 15px;
+    }
+
+    .footer-middle .container {
+        flex-direction: column;
+    }
+
+    .footer-icons span {
+        text-align: start;
+        font-size: 12px;
+    }
+
+    .footer-middle .policy-links {
+        font-size: 12px;
+        margin-bottom: 20px;
+        width: 250px;
+    }
+
+    .footer-middle .address-links {
+        margin-bottom: 13px;
+        font-size: 14px;
+    }
+
+    .became-tasker .container {
+        flex-direction: column;
+    }
+
+    .tasker-content h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .became-tasker {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .tasker-content p:last-child {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .tasker-content p {
+        font-size: 12px;
+    }
+
+    .testimonial-img img {
+        max-width: 100px;
+        object-fit: contain;
+    }
+
+    .about-task {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .banner-content h2 {
+        font-size: 25px;
+        margin-bottom: 4px;
+    }
+
+    .banner-content h1 {
+        font-size: 31px;
+        margin-bottom: 0px;
+    }
+
+    .banner-content span {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+    .next-slick {
+        top: 250px;
+        font-size: 10px;
+        width: 45px;
+        height: 45px;
+        /* right: 200px; */
+        left: unset;
+        right: 61%;
+        transform: rotate(180deg);
+        /* padding: -38px; */
+    }
+
+    .previous-slick {
+        top: 250px;
+        font-size: 10px;
+        width: 45px;
+        height: 45px;
+        right: unset;
+        left: 61%;
+        transform: rotate(180deg);
+    }
+
+    .address-links {
+        margin-bottom: 13px;
+        font-size: 12px;
+    }
+
+    .footer-middle .policy-links {
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+
+    .footer-icons i {
+        /* margin: 0 10px; */
+        font-size: 20px;
+        /* margin-bottom: 10px; */
+        /* color: #5c5959; */
+        /* transition: all .3s; */
+    }
+}
